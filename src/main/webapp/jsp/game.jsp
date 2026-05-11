@@ -37,7 +37,7 @@
            <c:forEach var="answer" items="${question.answers}">
                <form action="${pageContext.request.contextPath}/game" method="post">
                    <input type="hidden" name="answerId" value="${answer.nextQuestionId}"/>
-                   <button type="submit">${answer.text}</button>
+                   <button type="submit" class="answer-btn">${answer.text}</button>
                </form>
            </c:forEach>
        </c:otherwise>
